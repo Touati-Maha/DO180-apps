@@ -178,6 +178,26 @@ Vérifiez que tous les pods dans le namespace openshift-logging sont en état Ru
 ```
 oc get pods -n openshift-logging
 ```
+
+```
+NAME                                           READY   STATUS    RESTARTS   AGE
+cluster-logging-operator-554849f7dd-9tcz2      1/1     Running   0          24m
+collector-7rb2n                                1/1     Running   0          93s
+collector-bkj8x                                1/1     Running   0          93s
+collector-cng5z                                1/1     Running   0          93s
+collector-hx2gd                                1/1     Running   0          93s
+collector-x92zq                                1/1     Running   0          93s
+collector-xlqw9                                1/1     Running   0          93s
+logging-loki-compactor-0                       1/1     Running   0          98s
+logging-loki-distributor-64c798c4c5-6wpxp      1/1     Running   0          99s
+logging-loki-gateway-68fb59cdf5-6b8mt          2/2     Running   0          98s
+logging-loki-gateway-68fb59cdf5-7qf4s          2/2     Running   0          98s
+logging-loki-index-gateway-0                   1/1     Running   0          98s
+logging-loki-ingester-0                        1/1     Running   0          99s
+logging-loki-querier-577b55f8d5-f4cfb          1/1     Running   0          98s
+logging-loki-query-frontend-775755684d-f94bd   1/1     Running   0          98s
+logging-view-plugin-5b9b5b7bdc-tvkqk           1/1     Running   0          94s
+```
 Une fois que vous avez activé la console Web pour la visualisation, vous pouvez afficher vos journaux dans le menu Observe → Logs. L’image suivante montre le menu Logs et les filtres que vous pouvez appliquer à vos journaux à l’aide de la console Web :
 
 ![Logs ](webui.png)
