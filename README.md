@@ -71,7 +71,7 @@ Appliquez cette configuration :
 ```
 oc apply -f lokistack-s3.yaml
 ```
-Option 2 : Utiliser OpenShift Data Foundation (ODF)
+##  Option 2 : Utiliser OpenShift Data Foundation (ODF)
 
 ### Étape 2.1 : Créer une revendication de bucket
 
@@ -129,9 +129,9 @@ Appliquez cette configuration :
 oc apply -f lokistack-odf.yaml
 ```
 
-Étapes communes pour OpenShift Logging
+##  Étapes communes pour OpenShift Logging
 
-Étape 3 : Configurer ClusterLogging
+###  Étape 3 : Configurer ClusterLogging
 
 Créez un fichier clusterlogging.yaml :
 
@@ -183,7 +183,7 @@ Appliquez cette configuration :
 ```
 oc apply -f clusterlogforwarder.yaml
 ```
-Vérifications
+##  Vérifications
 Vérifiez que tous les pods dans le namespace openshift-logging sont en état Running :
 
 ```
