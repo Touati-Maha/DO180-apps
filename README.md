@@ -190,4 +190,17 @@ Vérifiez que tous les pods dans le namespace openshift-logging sont en état Ru
 oc get pods -n openshift-logging
 ```
 Accédez à l’interface d’OpenShift Console pour visualiser les logs.
+![Logs ](webui.png)
+
+1- Plage de temps des journaux.
+
+2- Filtrage des journaux par contenu, namespace, pod ou conteneur.
+
+3- Niveau de gravité du journal. Les valeurs possibles sont critical, error, warning, debug, info, trace et unknown.
+
+4- Type de journal. Les valeurs possibles sont application, infrastructure et audit.
+
+5- Requête de journal dans le langage de requête LogQL. Vous pouvez afficher ce champ en cliquant sur Show Query.
+
+![Dropdown-menu ](dropdown-menu.png)
 
