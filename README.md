@@ -178,7 +178,8 @@ Vérifiez que tous les pods dans le namespace openshift-logging sont en état Ru
 ```
 oc get pods -n openshift-logging
 ```
-Accédez à l’interface d’OpenShift Console pour visualiser les logs.
+Une fois que vous avez activé la console Web pour la visualisation, vous pouvez afficher vos journaux dans le menu Observe → Logs. L’image suivante montre le menu Logs et les filtres que vous pouvez appliquer à vos journaux à l’aide de la console Web :
+
 ![Logs ](webui.png)
 
 1- Plage de temps des journaux.
