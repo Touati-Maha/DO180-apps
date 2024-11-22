@@ -8,11 +8,11 @@ Ce guide explique comment configurer Loki pour la collecte et le stockage des lo
 
 ## Prérequis
 
-- Un cluster OpenShift configuré.
+- Un cluster OpenShift configuré: Red Hat OpenShift Logging operator & Loki operator sont installés
 - Soit un service S3 externe compatible, soit OpenShift Data Foundation (ODF) installé.
 - Pour un backend S3 externe :  
   - **Access Key**, **Secret Key**, **Bucket Name** et **Endpoint URL**.
-  - Si nécessaire, un certificat CA pour un endpoint S3 auto-signé.
+
 
 ---
 
