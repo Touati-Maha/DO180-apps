@@ -36,16 +36,7 @@ Remplacez :
 <BUCKET_NAME> : Nom du bucket.
 <S3_ENDPOINT_URL> : URL d'accès au service S3 (par exemple s3.amazonaws.com ou l'URL MinIO).
 
-### Étape 1.2 : Ajouter un certificat TLS (si requis)
-Si votre S3 utilise un certificat , suivez ces étapes pour ajouter le certificat CA :
-
-Exportez le certificat CA : s3-ca.crt
-Créez un ConfigMap pour le certificat :
-
-```
-oc create configmap s3-ca-cert -n openshift-logging --from-file=ca.crt=s3-ca.crt
-```
-### Étape 1.3 : Configurer LokiStack pour S3 externe
+### Étape 1.2 : Configurer LokiStack pour S3 externe
 Créez un fichier lokistack-s3.yaml :
 
 ```
@@ -61,8 +52,6 @@ spec:
     secret:
       name: logging-loki-s3
       type: s3
-    tls:
-      caName: s3-ca-cert # Facultatif, utilisez si un certificat auto-signé est utilisé.
   tenants:
     mode: openshift-logging
 ```
